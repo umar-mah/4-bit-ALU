@@ -3,31 +3,30 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_textio.all;
 use std.textio.all;
 
-entity multiplexer_test is
-end multiplexer_test;
+entity tb_mux_slice is
+end tb_mux_slice;
 
-architecture test of multiplexer_test is
+architecture test of tb_mux_slice is
 
-  component multiplexer
+  component mux_slice
     port (
       S0 : in  std_logic;
       S1 : in  std_logic;
-      B  : in  std_logic_vector(3 downto 0);
-      Y  : out std_logic_vector(3 downto 0)
+      B  : in  std_logic;
+      Y  : out std_logic
     );
   end component;
 
-  for mux_1 : multiplexer use entity work.multiplexer(structural);
+  for mux_1 : mux_slice use entity work.mux_slice(structural);
 
   -- Testbench signals
   signal s0_tb, s1_tb : std_logic := '0';
-  signal b_tb         : std_logic_vector(3 downto 0) := (others => '0');
-  signal y_tb         : std_logic_vector(3 downto 0);
-
+  signal b_tb         : std_logic;
+  signal y_tb         : std_logic;
 begin
 
 
-  mux_1 : multiplexer port map (s0_tb, s1_tb, b_tb, y_tb);
+  mux_1 : mux_slice port map (s0_tb, s1_tb, b_tb, y_tb);
 
 
   io_process : process
@@ -36,8 +35,8 @@ begin
     variable buf  : line;
     variable vs0  : std_logic;
     variable vs1  : std_logic;
-    variable vb   : std_logic_vector(3 downto 0);
-    variable vy   : std_logic_vector(3 downto 0);
+    variable vb   : std_logic;
+    variable vy   : std_logic;
   begin
     while not endfile(infile) loop
       -- read S0

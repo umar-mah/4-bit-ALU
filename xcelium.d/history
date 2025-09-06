@@ -1,0 +1,17 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(06Sep2025:14:15:01):( xrun -top tb_alu4 and2.vhd or3.vhd xor2.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd alu_4.vhd tb_alu4.vhd -input ncsim.run -access +rwc )
+s2::(06Sep2025:14:16:15):( xrun -top tb_alu4 and2.vhd or3.vhd xor2.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd alu_4.vhd tb_alu4.vhd -input ncsim.run -access +rwc )
+s3::(06Sep2025:14:16:47):( xrun -top tb_alu4 and2.vhd or3.vhd xor2.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd alu_4.vhd tb_alu4.vhd -input ncsim.run -access +rwc )
+s4::(06Sep2025:14:24:18):( xrun -top tb_multiplexer and2.vhd or3.vhd xor2.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd tb_multiplexer.vhd -input ncsim.run -access +rwc )
+s5::(06Sep2025:14:26:01):( xrun -top tb_multiplexer and2.vhd or3.vhd xor2.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd tb_multiplexer.vhd -input ncsim.run -access +rwc )
+s6::(06Sep2025:14:26:42):( xrun -top multiplexer_test and2.vhd or3.vhd xor2.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd tb_multiplexer.vhd -input ncsim.run -access +rwc )
+s7::(06Sep2025:14:40:45):( xrun -top multiplexer_test and2.vhd or3.vhd xor2.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd tb_multiplexer.vhd -input ncsim.run -access +rwc )
+s8::(06Sep2025:14:41:06):( xrun -top multiplexer_test and2.vhd or3.vhd xor2.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd tb_multiplexer.vhd -input ncsim.run -access +rwc )
+s9::(06Sep2025:14:41:28):( xrun -top multiplexer_test and2.vhd or3.vhd xor2.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd tb_multiplexer.vhd -input ncsim.run -access +rwc )
+s10::(06Sep2025:14:46:08):( xrun -top tb_mux_slice and2.vhd or3.vhd xor2.vhd mux_slice.vhd tb_mux_slice.vhd -input ncsim.run -access +rwc )
+s11::(06Sep2025:14:46:51):( xrun -top tb_mux_slice and2.vhd or3.vhd xor2.vhd mux_slice.vhd tb_mux_slice.vhd -input ncsim.run -access +rwc )
+s12::(06Sep2025:14:49:27):( xrun -top multiplexer_test and2.vhd or3.vhd xor2.vhd inverter.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd tb_multiplexer.vhd -input ncsim.run -access +rwc )
+s13::(06Sep2025:14:51:22):( xrun -top multiplexer_test and2.vhd or3.vhd xor2.vhd inverter.vhd adder1.vhd adder4.vhd mux_slice.vhd multiplexer.vhd tb_multiplexer.vhd -input ncsim.run -access +rwc )

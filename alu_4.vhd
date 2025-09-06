@@ -33,7 +33,7 @@ architecture structural of alu_4 is
 	    );
 	end component;
       	signal mux_out : std_logic_vector(3 downto 0);
-         for u_mux   : multiplexer use entity work.multiplexer(behavioral);
+         for u_mux   : multiplexer use entity work.multiplexer(structural);
 	 for u_adder : adder4     use entity work.adder4(structural);
 	begin
 

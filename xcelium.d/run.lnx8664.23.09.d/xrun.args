@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-top
+multiplexer_test
+and2.vhd
+or3.vhd
+xor2.vhd
+inverter.vhd
+adder1.vhd
+adder4.vhd
+mux_slice.vhd
+multiplexer.vhd
+tb_multiplexer.vhd
+-input
+ncsim.run
+-access
++rwc
