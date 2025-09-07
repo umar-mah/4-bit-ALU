@@ -35,8 +35,8 @@ begin
   and_nS0S1: and2 port map(input1 => nS0, input2 => S1,  output => sel01);
   and_S0S1 : and2 port map(input1 => S0,  input2 => S1,  output => sel11);
 
-  and10: and2 port map(input1 => nB, input2 => sel10, output => b10);
-  and01: and2 port map(input1 => B_in,   input2 => sel01, output => b01);
+  and10: and2 port map(input1 => B_in, input2 => sel10, output => b10);
+  and01: and2 port map(input1 => nB,   input2 => sel01, output => b01);
   b11 <= sel11;
 
   or_out: or3 port map(input1 => b10, input2 => b01, input3 => b11, output => Y_out);

@@ -39,6 +39,6 @@ architecture structural of alu_4 is
 
 	 u_mux : multiplexer port map (S0 => S0, S1 => S1, B => B, Y => mux_out);
 
-	  u_adder : adder4 port map (input1 => A, input2 => mux_out, carryin => Cin, sum => G, carryout => Cout);
+	 u_adder : adder4 port map (input1 => A, input2 => mux_out, carryin => Cin, sum => G, carryout => Cout);
 
 end structural;

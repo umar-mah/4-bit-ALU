@@ -19,7 +19,6 @@ architecture test of multiplexer_test is
 
   for mux_1 : multiplexer use entity work.multiplexer(structural);
 
-  -- Testbench signals
   signal s0_tb, s1_tb : std_logic := '0';
   signal b_tb         : std_logic_vector(3 downto 0) := (others => '0');
   signal y_tb         : std_logic_vector(3 downto 0);
@@ -55,18 +54,15 @@ begin
       read(buf, vb);
       b_tb <= vb;
 
-      -- wait for DUT to update at clock edge
       wait for 10 ns;
 
-      -- capture output
       vy := y_tb;
 
-      -- write Y to output file
       write(buf, vy);
       writeline(outfile, buf);
     end loop;
 
-    wait; -- stop simulation
+    wait;
   end process io_process;
 
 end test;

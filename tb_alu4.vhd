@@ -22,7 +22,6 @@ architecture test of tb_alu4 is
 
   for alu_4_temp : alu_4 use entity work.alu_4(structural);
 
-  -- Testbench signals
   signal a_tb         : std_logic_vector(3 downto 0) := (others => '0');
   signal b_tb         : std_logic_vector(3 downto 0) := (others => '0');
   signal cin_tb, cout_tb : std_logic := '0';
@@ -43,8 +42,8 @@ begin
 
 
   io_process : process
-    file infile  : text is in  "mux_in.txt";
-    file outfile : text is out "mux_out.txt";
+    file infile  : text is in  "alu4_in.txt";
+    file outfile : text is out "alu4_out.txt";
     variable buf  : line;
     variable va   : std_logic_vector(3 downto 0);
     variable vb   : std_logic_vector(3 downto 0);
